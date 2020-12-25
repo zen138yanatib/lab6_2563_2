@@ -1,8 +1,18 @@
 #include<iostream>
+#include<cstring>
 using namespace std;
 
+char A;
 char before(char x){
-	//Write your function definition here
+    if(x == 'A'){
+         A = 'Z';
+    }else if(x >= 'A' && x <= 'Z'){
+         A = x -1;
+    }else if(x < 65 || x > 90){
+         A = '0';
+    }
+    return A;
+
 }
 
 int main(){
